@@ -38,13 +38,13 @@ Following Features are supported so far:
 ## <a name="LatestVersionNews"></a>Latest Version
 
 #### Dependency Versions
-* [IMGUI 1.79](https://github.com/ocornut/imgui/releases/tag/v1.79)
+* [IMGUI 1.89.4](https://github.com/ocornut/imgui/releases/tag/v1.89.4)
 * [Irrlicht 1.8.5](https://downloads.sourceforge.net/irrlicht/irrlicht-1.8.5.zip)
 * Other versions may work as well, but they are not tested.
 
 
 #### Fixes
-* Upgraded the binding to work with ImGui 1.79 from the latest 1.46 originally supported by ZahlGraf implementation.
+* Upgraded the binding to work with ImGui 1.89.4 from the latest 1.46 originally supported by ZahlGraf implementation.
 
 #### Tested Build Variants
 * Visual C++ 2015 (64bit): debug, static library
