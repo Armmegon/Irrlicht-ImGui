@@ -1,7 +1,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,7 @@
 # SOFTWARE.
 #
 
-SET (IRRIMGUI_STATIC_LIBRARY OFF CACHE BOOL "Enabled static lib build (requires also static lib of Irrlicht!).")
+SET (IRRIMGUI_STATIC_LIBRARY ON CACHE BOOL "Enabled static lib build (requires also static lib of Irrlicht!).")
 
 if (IRRIMGUI_STATIC_LIBRARY)
 	message(STATUS "Build static library...")

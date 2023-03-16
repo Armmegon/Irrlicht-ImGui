@@ -1,7 +1,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -24,6 +24,7 @@
 
 message(STATUS "Looking for OpenGL header and library...")
 
+SET(OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL)
 
 if (OPENGL_FOUND)

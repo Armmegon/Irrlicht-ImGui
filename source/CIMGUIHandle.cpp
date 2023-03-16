@@ -34,6 +34,7 @@
 #include "IIMGUIDriver.h"
 #include <IrrIMGUI/IMGUIHelper.h>
 #include "private/IrrIMGUIDebug_priv.h"
+#include "IMGUI/backends/imgui_impl_opengl2.h"
 
 /**
  * @addtogroup IrrIMGUIPrivate
@@ -92,6 +93,7 @@ namespace Private
   {
 
     ImGui::Render();
+    ImGui_ImplOpenGL2_RenderDrawData(ImGui::GetDrawData());
     return;
   }
 
@@ -101,6 +103,7 @@ namespace Private
     updateIMGUIFrameValues(mpGUIDriver->getIrrDevice(), mpEventStorage, &mLastTime);
 
     // start new GUI frame
+    ImGui_ImplOpenGL2_NewFrame();
     ImGui::NewFrame();
 
     return;

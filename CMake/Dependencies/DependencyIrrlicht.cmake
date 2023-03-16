@@ -1,7 +1,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,7 @@
 # SOFTWARE.
 #
 
-SET (IRRLICHT_INCLUDE_DIR "." CACHE PATH "The include directory of irrlicht.")
+SET (IRRLICHT_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/dependency/IRRLICHT/include" CACHE PATH "The include directory of irrlicht.")
 SET (IRRLICHT_LIB_DIR "." CACHE FILEPATH "The static library of irrlicht.")
 SET (IRRLICHT_BIN_DIR "." CACHE FILEPATH "The shared library of irrlicht.")
 

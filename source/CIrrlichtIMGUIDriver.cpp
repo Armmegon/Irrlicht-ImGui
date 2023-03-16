@@ -128,8 +128,6 @@ namespace IrrlichtHelper
   CIrrlichtIMGUIDriver::CIrrlichtIMGUIDriver(irr::IrrlichtDevice * const pDevice):
     IIMGUIDriver(pDevice)
   {
-    setupFunctionPointer();
-
     irr::video::IVideoDriver * pDriver = pDevice->getVideoDriver();
     irr::video::E_DRIVER_TYPE Type = pDriver->getDriverType();
 
@@ -163,15 +161,6 @@ namespace IrrlichtHelper
 
   CIrrlichtIMGUIDriver::~CIrrlichtIMGUIDriver(void)
   {
-    return;
-  }
-
-  void CIrrlichtIMGUIDriver::setupFunctionPointer(void)
-  {
-    ImGuiIO &rGUIIO  = ImGui::GetIO();
-
-    rGUIIO.RenderDrawListsFn = CIrrlichtIMGUIDriver::drawGUIList;
-
     return;
   }
 
