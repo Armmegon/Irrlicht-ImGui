@@ -1,7 +1,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -22,8 +22,8 @@
 # SOFTWARE.
 #
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-cmake_policy(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8.12)
+cmake_policy(VERSION 2.8.12)
 
 SET(CMAKE_MODULE_PATH 
 	${CMAKE_MODULE_PATH} 

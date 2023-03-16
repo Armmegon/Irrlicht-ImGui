@@ -74,14 +74,6 @@ namespace Driver
       /// @}
 
       /// @{
-      /// @name Methods used for setup.
-
-      /// @brief Setups the IMGUI function pointer.
-      void setupFunctionPointer(void);
-
-      /// @}
-
-      /// @{
       /// @name Methods used for rendering.
 
       /// @brief Renders a full IMGUI draw list (called by the IMGUI system).

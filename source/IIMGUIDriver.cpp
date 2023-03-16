@@ -37,6 +37,7 @@
 #include "COpenGLIMGUIDriver.h"
 #include "CIrrlichtIMGUIDriver.h"
 #include "private/IrrIMGUIDebug_priv.h"
+#include "IMGUI/backends/imgui_impl_opengl2.h"
 #include <IrrIMGUI/IrrIMGUIConstants.h>
 
 /**
@@ -59,6 +60,8 @@ namespace Private
   IIMGUIDriver::IIMGUIDriver(irr::IrrlichtDevice * const pDevice)
   {
     ImGui::CreateContext();
+    ImGui_ImplOpenGL2_Init();
+
     mInstances++;
     mTextureInstances = 0;
 
@@ -87,6 +90,7 @@ namespace Private
     }
 
     ImGui::GetIO().Fonts->Clear();
+    ImGui_ImplOpenGL2_Shutdown();
     ImGui::DestroyContext();
 
     mpDevice->drop();

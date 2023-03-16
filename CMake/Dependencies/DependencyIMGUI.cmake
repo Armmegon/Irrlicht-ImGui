@@ -25,7 +25,7 @@
 SET (IMGUI_SOURCE_DIR "${CMAKE_SOURCE_DIR}/dependency/IMGUI" CACHE PATH "The source directory of IMGUI.")
 
 IF (IRRIMGUI_INSTALL_MEDIA_FILES)
-	SET(IMGUI_FONT_DIR "${CMAKE_SOURCE_DIR}/dependency/IMGUI/extra_fonts" CACHE PATH "The directory where the font files from IMGUI are stored (Cousine-Regular.ttf, DroidSans.ttf, Karla-Regular.ttf, ProggyClean.ttf).")
+	SET(IMGUI_FONT_DIR "${CMAKE_SOURCE_DIR}/dependency/IMGUI/misc/fonts" CACHE PATH "The directory where the font files from IMGUI are stored (Cousine-Regular.ttf, DroidSans.ttf, Karla-Regular.ttf, ProggyClean.ttf).")
 ENDIF ()
 
 INCLUDE_DIRECTORIES(
@@ -44,11 +44,17 @@ SET (IMGUI_PRIVATE_HEADER_FILES
 	${IMGUI_SOURCE_DIR}/imstb_truetype.h	
 )
 
+SET (IMGUI_BACKEND_FILES
+	${IMGUI_SOURCE_DIR}/backends/imgui_impl_opengl2.cpp
+)
+
 SET (IMGUI_SOURCE_FILES
 	${IMGUI_SOURCE_DIR}/imgui.cpp
 	${IMGUI_SOURCE_DIR}/imgui_draw.cpp	
 	${IMGUI_SOURCE_DIR}/imgui_demo.cpp	
-	${IMGUI_SOURCE_DIR}/imgui_widgets.cpp	
+	${IMGUI_SOURCE_DIR}/imgui_widgets.cpp
+	${IMGUI_SOURCE_DIR}/imgui_tables.cpp
+	${IMGUI_BACKEND_FILES}
 )
 
 SET (IMGUI_FONTFILES

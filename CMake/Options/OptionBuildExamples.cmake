@@ -1,7 +1,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,7 @@
 # SOFTWARE.
 #
 
-SET (IRRIMGUI_BUILD_EXAMPLES ON CACHE BOOL "Enables the example compilation.")
+SET (IRRIMGUI_BUILD_EXAMPLES OFF CACHE BOOL "Enables the example compilation.")
 
 if (IRRIMGUI_BUILD_EXAMPLES)
 	message(STATUS "Build examples...")
