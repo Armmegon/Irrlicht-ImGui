@@ -1,7 +1,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -26,6 +26,8 @@ message(STATUS " ")
 message(STATUS "The following settings have been applied:")
 message(STATUS " -> Dependencies found:")
 message(STATUS "    * IMGUI:    ${IMGUI_FOUND}")
+message(STATUS "    * ImGui Note Editor:    ${ImguiNoteEditor_FOUND}")
+message(STATUS "    * ImGuizmo:    ${ImGuizmo_FOUND}")
 message(STATUS "    * Irrlicht: ${IRRLICHT_FOUND}")
 
 if (IRRIMGUI_BUILD_EXAMPLES)
