@@ -68,8 +68,28 @@ namespace IrrIMGUI
         mReturnPressed(false),
         mEscapePressed(false),
         mKeyAPressed(false),
+        mKeyBPressed(false),
         mKeyCPressed(false),
+        mKeyDPressed(false),
+        mKeyEPressed(false),
+        mKeyFPressed(false),
+        mKeyGPressed(false),
+        mKeyHPressed(false),
+        mKeyIPressed(false),
+        mKeyJPressed(false),
+        mKeyKPressed(false),
+        mKeyLPressed(false),
+        mKeyMPressed(false),
+        mKeyNPressed(false),
+        mKeyOPressed(false),
+        mKeyPPressed(false),
+        mKeyQPressed(false),
+        mKeyRPressed(false),
+        mKeySPressed(false),
+        mKeyTPressed(false),
+        mKeyUPressed(false),
         mKeyVPressed(false),
+        mKeyWPressed(false),
         mKeyXPressed(false),
         mKeyYPressed(false),
         mKeyZPressed(false),
@@ -107,8 +127,28 @@ namespace IrrIMGUI
       bool mReturnPressed;
       bool mEscapePressed;
       bool mKeyAPressed;
+      bool mKeyBPressed;
       bool mKeyCPressed;
+      bool mKeyDPressed;
+      bool mKeyEPressed;
+      bool mKeyFPressed;
+      bool mKeyGPressed;
+      bool mKeyHPressed;
+      bool mKeyIPressed;
+      bool mKeyJPressed;
+      bool mKeyKPressed;
+      bool mKeyLPressed;
+      bool mKeyMPressed;
+      bool mKeyNPressed;
+      bool mKeyOPressed;
+      bool mKeyPPressed;
+      bool mKeyQPressed;
+      bool mKeyRPressed;
+      bool mKeySPressed;
+      bool mKeyTPressed;
+      bool mKeyUPressed;
       bool mKeyVPressed;
+      bool mKeyWPressed;
       bool mKeyXPressed;
       bool mKeyYPressed;
       bool mKeyZPressed;

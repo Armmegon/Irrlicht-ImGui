@@ -145,12 +145,92 @@ namespace IrrIMGUI
           mKeyAPressed = IsKeyPressedDown;
           break;
 
+        case irr::KEY_KEY_B:
+          mKeyBPressed = IsKeyPressedDown;
+          break;
+
         case irr::KEY_KEY_C:
           mKeyCPressed = IsKeyPressedDown;
           break;
 
+        case irr::KEY_KEY_D:
+          mKeyDPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_E:
+          mKeyEPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_F:
+          mKeyFPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_G:
+          mKeyGPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_H:
+          mKeyHPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_I:
+          mKeyIPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_J:
+          mKeyJPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_K:
+          mKeyKPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_L:
+          mKeyLPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_M:
+          mKeyMPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_N:
+          mKeyNPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_O:
+          mKeyOPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_P:
+          mKeyPPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_Q:
+          mKeyQPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_R:
+          mKeyRPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_S:
+          mKeySPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_T:
+          mKeyTPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_U:
+          mKeyUPressed = IsKeyPressedDown;
+          break;
+
         case irr::KEY_KEY_V:
           mKeyVPressed = IsKeyPressedDown;
+          break;
+
+        case irr::KEY_KEY_W:
+          mKeyWPressed = IsKeyPressedDown;
           break;
 
         case irr::KEY_KEY_X:

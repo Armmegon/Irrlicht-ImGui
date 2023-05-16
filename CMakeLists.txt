@@ -27,6 +27,8 @@ cmake_policy(VERSION 2.8.12)
 	
 PROJECT(IrrIMGUI)
 
+SET(CMAKE_CXX_STANDARD 14)
+
 SET(CMAKE_MODULE_PATH 
 	${CMAKE_MODULE_PATH} 
 	${CMAKE_SOURCE_DIR}/CMake
@@ -61,6 +63,8 @@ INCLUDE(OptionUnitTests)
 
 # Dependency related settings
 INCLUDE(DependencyIMGUI)
+INCLUDE(DependencyImGuiNodeEditor)
+INCLUDE(DependencyImGuizmo)
 INCLUDE(DependencyIrrlicht)
 INCLUDE(DependencyOpenGL)
 INCLUDE(DependencyDirectX9)
@@ -76,11 +80,15 @@ SET(ALL_HEADER_FILES
 	${IRRIMGUI_PUBLIC_HEADER_FILES}
 	${IMGUI_PUBLIC_HEADER_FILES}
 	${IMGUI_PRIVATE_HEADER_FILES}
+	${ImguiNodeEditor_HEADER_FILES}
+	${ImGuizmo_HEADER_FILES}
 )
 
 SET(ALL_SOURCE_FILES
 	${IRRIMGUI_SOURCE_FILES}
 	${IMGUI_SOURCE_FILES}
+	${ImguiNodeEditor_SOURCE_FILES}
+	${ImGuizmo_SOURCE_FILES}
 )
 
 # Target settings

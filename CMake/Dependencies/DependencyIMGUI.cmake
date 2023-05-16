@@ -42,6 +42,7 @@ SET (IMGUI_PRIVATE_HEADER_FILES
 	${IMGUI_SOURCE_DIR}/imstb_rectpack.h	
 	${IMGUI_SOURCE_DIR}/imstb_textedit.h	
 	${IMGUI_SOURCE_DIR}/imstb_truetype.h	
+	${IMGUI_SOURCE_DIR}/stb_image.h
 )
 
 SET (IMGUI_BACKEND_FILES
@@ -67,7 +68,12 @@ SET (IMGUI_FONTFILES
 SET (IMGUI_FOUND TRUE)	
 IF (NOT EXISTS "${IMGUI_SOURCE_DIR}/imgui.h")
 	message(SEND_ERROR "Cannot find file ${IMGUI_SOURCE_DIR}/imgui.h please specify a correct source directory for IMGUI!")
-	SET (IMGUI_FOUND FALSE)	
+	SET (IMGUI_FOUND FALSE)
+ENDIF ()
+
+IF (NOT EXISTS "${IMGUI_SOURCE_DIR}/stb_image.h")
+	message(SEND_ERROR "Cannot find file ${IMGUI_SOURCE_DIR}/stb_image.h Please download stb_image.h from https://github.com/nothings/stb and paste in ${IMGUI_SOURCE_DIR}.")
+	SET (IMGUI_FOUND FALSE)
 ENDIF ()
 
 IF (IRRIMGUI_INSTALL_MEDIA_FILES)
