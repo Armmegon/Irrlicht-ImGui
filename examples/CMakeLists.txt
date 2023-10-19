@@ -27,7 +27,7 @@ cmake_policy(VERSION 2.8.12)
 
 message(STATUS " -> Configure all examples:")
 
-SET(IRRIMGUI_MEDIA_DIR   "${CMAKE_SOURCE_DIR}/../media" CACHE PATH "The directory where the media files are stored in.")
+SET(IRRIMGUI_MEDIA_DIR   "${CMAKE_CURRENT_SOURCE_DIR}/../media" CACHE PATH "The directory where the media files are stored in.")
 
 ADD_SUBDIRECTORY(01.HelloWorld)
 ADD_SUBDIRECTORY(02.AnotherWindow)

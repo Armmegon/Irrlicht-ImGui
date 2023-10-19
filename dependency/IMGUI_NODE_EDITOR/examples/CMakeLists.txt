@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.12)
 project(imgui-node-editor)
 
 # Define IMGUI_NODE_EDITOR_ROOT_DIR pointing to project root directory
-get_filename_component(IMGUI_NODE_EDITOR_ROOT_DIR ${CMAKE_SOURCE_DIR}/.. ABSOLUTE CACHE)
+get_filename_component(IMGUI_NODE_EDITOR_ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../.. ABSOLUTE CACHE)
 
 # Enable solution folders in Visual Studio and Folders in Xcode
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)

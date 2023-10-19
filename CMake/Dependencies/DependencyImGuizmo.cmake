@@ -22,7 +22,7 @@
 # SOFTWARE.
 #
 
-SET (ImGuizmo_SOURCE_DIR "${CMAKE_SOURCE_DIR}/dependency/IMGUIZMO" CACHE PATH "The source directory of ImGuizmo.")
+SET (ImGuizmo_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/dependency/IMGUIZMO" CACHE PATH "The source directory of ImGuizmo.")
 
 INCLUDE_DIRECTORIES(
     ${ImGuizmo_SOURCE_DIR}/..

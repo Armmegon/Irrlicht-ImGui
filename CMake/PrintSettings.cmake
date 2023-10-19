@@ -72,7 +72,7 @@ message(STATUS "    * Linker flags (module):        ${CMAKE_MODULE_LINKER_FLAGS}
 message(STATUS "    * Linker flags (static lib):    ${CMAKE_STATIC_LINKER_FLAGS}")
 message(STATUS "    * Linker flags (shared lib):    ${CMAKE_SHARED_LINKER_FLAGS}")
 
-GET_DIRECTORY_PROPERTY( DirDefines DIRECTORY ${CMAKE_SOURCE_DIR} COMPILE_DEFINITIONS )
+GET_DIRECTORY_PROPERTY( DirDefines DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} COMPILE_DEFINITIONS )
 foreach( SingleDefine ${DirDefines} )
     message(STATUS "    * Use define: " ${SingleDefine} )
 endforeach()
@@ -80,6 +80,3 @@ endforeach()
 message(STATUS " ")
 message(STATUS " -> Install Path: ${CMAKE_INSTALL_PREFIX}")
 message(STATUS " ")
-
-
-

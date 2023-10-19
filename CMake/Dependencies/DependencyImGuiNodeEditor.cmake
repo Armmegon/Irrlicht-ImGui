@@ -22,7 +22,7 @@
 # SOFTWARE.
 #
 
-SET (ImguiNodeEditor_SOURCE_DIR "${CMAKE_SOURCE_DIR}/dependency/IMGUI_NODE_EDITOR" CACHE PATH "The source directory of ImGui Node Editor.")
+SET (ImguiNodeEditor_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/dependency/IMGUI_NODE_EDITOR" CACHE PATH "The source directory of ImGui Node Editor.")
 
 INCLUDE_DIRECTORIES(
     ${ImguiNodeEditor_SOURCE_DIR}/..

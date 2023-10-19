@@ -1,7 +1,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -28,11 +28,11 @@ find_package(Doxygen)
 if (DOXYGEN_FOUND)
     MESSAGE(STATUS "Doxygen Correctly Found:")
 	
-	CONFIGURE_FILE(${CMAKE_SOURCE_DIR}/Doxyfile.in ${CMAKE_BINARY_DIR}/Doxyfile @ONLY)
+	CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in ${CMAKE_BINARY_DIR}/Doxyfile @ONLY)
 	ADD_CUSTOM_TARGET(doc ${DOXYGEN_EXECUTABLE} ${CMAKE_BINARY_DIR}/Doxyfile WORKING_DIRECTORY ${CMAKE_BINARY_DIR} COMMENT "Generating API documentation with Doxygen" VERBATIM)
 	
 	INSTALL(DIRECTORY ${CMAKE_BINARY_DIR}/Doxygen DESTINATION  "." COMPONENT doc OPTIONAL)
-	INSTALL(FILES ${CMAKE_SOURCE_DIR}/Doxygen/index.html DESTINATION "Doxygen" COMPONENT doc OPTIONAL)
+	INSTALL(FILES ${CMAKE_CURRENT_SOURCE_DIR}/Doxygen/index.html DESTINATION "Doxygen" COMPONENT doc OPTIONAL)
 	
 else ()
     MESSAGE(STATUS "Doxygen missing: Cannot create documentation.")
