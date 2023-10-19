@@ -1,7 +1,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -41,7 +41,7 @@ FUNCTION(BUILD_APP_GENERIC APP_NAME APP_SOURCE_FILES APP_HEADER_FILES APP_INSTAL
 	mark_as_advanced(FORCE ZZZ_EXAMPLE_SINGLE_COMPILE)
 	
 	SET(IRRIMGUI_INSTALL_EXAMPLE_SOURCE ON CACHE BOOL "If this is enabled, cmake will install source files for the example.")
-	SET(IRRIMGUI_MEDIA_DIR   "${CMAKE_SOURCE_DIR}/../../media" CACHE PATH "The directory where the media files are stored in.")
+	SET(IRRIMGUI_MEDIA_DIR   "${CMAKE_CURRENT_SOURCE_DIR}/../../media" CACHE PATH "The directory where the media files are stored in.")
 	SET(IRRIMGUI_INCLUDE_DIR "NOT-FOUND" CACHE PATH "The include directory for IrrIMGUI headers.")
 	SET(IRRIMGUI_LIBRARY     "NOT-FOUND" CACHE FILEPATH "The path to the IrrIMGUI library.")
 	SET(IRRIMGUI_STATIC_LIBRARY OFF CACHE BOOL "Enabled static lib for IrrIMGUI.")

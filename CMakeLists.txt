@@ -31,12 +31,12 @@ SET(CMAKE_CXX_STANDARD 20)
 
 SET(CMAKE_MODULE_PATH 
 	${CMAKE_MODULE_PATH} 
-	${CMAKE_SOURCE_DIR}/CMake
-	${CMAKE_SOURCE_DIR}/CMake/Dependencies
-	${CMAKE_SOURCE_DIR}/CMake/Options
-	${CMAKE_SOURCE_DIR}/CMake/Compiler
-	${CMAKE_SOURCE_DIR}/CMake/Packages
-	${CMAKE_SOURCE_DIR}/CMake/OperationSystems
+	${CMAKE_CURRENT_SOURCE_DIR}/CMake
+	${CMAKE_CURRENT_SOURCE_DIR}/CMake/Dependencies
+	${CMAKE_CURRENT_SOURCE_DIR}/CMake/Options
+	${CMAKE_CURRENT_SOURCE_DIR}/CMake/Compiler
+	${CMAKE_CURRENT_SOURCE_DIR}/CMake/Packages
+	${CMAKE_CURRENT_SOURCE_DIR}/CMake/OperationSystems
 )
 
 # Contains a list of source files...
@@ -141,7 +141,7 @@ if ((IRRIMGUI_BUILD_EXAMPLES) OR (IRRIMGUI_BUILD_UNITTESTS))
 	SET(ZZZ_EXAMPLE_SINGLE_COMPILE OFF CACHE BOOL "(Do not set!) If this is enabled, cmake assumes that an example should be compiled for itself (This variable is set automatically, so do not set!).")
 	mark_as_advanced(FORCE ZZZ_EXAMPLE_SINGLE_COMPILE)
 	
-	SET(IRRIMGUI_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include" CACHE PATH "The include directory for IrrIMGUI headers.")
+	SET(IRRIMGUI_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/includes" CACHE PATH "The include directory for IrrIMGUI headers.")
 	mark_as_advanced(FORCE IRRIMGUI_INCLUDE_DIR)
 	SET(IRRIMGUI_LIBRARY     "${CMAKE_CURRENT_BINARY_DIR}/${IRRIMGUI_LIB_FILE}" CACHE FILEPATH "The path to the IrrIMGUI library.")
 	mark_as_advanced(FORCE IRRIMGUI_LIBRARY)

@@ -22,10 +22,10 @@
 # SOFTWARE.
 #
 
-SET (IMGUI_SOURCE_DIR "${CMAKE_SOURCE_DIR}/dependency/IMGUI" CACHE PATH "The source directory of IMGUI.")
+SET (IMGUI_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/dependency/IMGUI" CACHE PATH "The source directory of IMGUI.")
 
 IF (IRRIMGUI_INSTALL_MEDIA_FILES)
-	SET(IMGUI_FONT_DIR "${CMAKE_SOURCE_DIR}/dependency/IMGUI/misc/fonts" CACHE PATH "The directory where the font files from IMGUI are stored (Cousine-Regular.ttf, DroidSans.ttf, Karla-Regular.ttf, ProggyClean.ttf).")
+	SET(IMGUI_FONT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/dependency/IMGUI/misc/fonts" CACHE PATH "The directory where the font files from IMGUI are stored (Cousine-Regular.ttf, DroidSans.ttf, Karla-Regular.ttf, ProggyClean.ttf).")
 ENDIF ()
 
 INCLUDE_DIRECTORIES(

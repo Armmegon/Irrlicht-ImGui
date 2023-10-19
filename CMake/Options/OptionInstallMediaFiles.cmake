@@ -1,7 +1,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +23,7 @@
 #
 
 SET (IRRIMGUI_INSTALL_MEDIA_FILES ON CACHE BOOL "Installs the media files.")
-SET(IRRIMGUI_MEDIA_DIR "${CMAKE_SOURCE_DIR}/media" CACHE PATH "The directory where the media files are stored in.")
+SET(IRRIMGUI_MEDIA_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../media" CACHE PATH "The directory where the media files are stored in.")
 
 if (IRRIMGUI_INSTALL_MEDIA_FILES)
 	message(STATUS "Install media files...")

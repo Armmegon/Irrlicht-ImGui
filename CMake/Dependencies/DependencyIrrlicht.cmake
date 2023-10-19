@@ -22,9 +22,9 @@
 # SOFTWARE.
 #
 
-SET (IRRLICHT_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/dependency/IRRLICHT/include" CACHE PATH "The include directory of irrlicht.")
+SET (IRRLICHT_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/dependency/IRRLICHT/include" CACHE PATH "The include directory of irrlicht.")
 SET (IRRLICHT_LIB_DIR "." CACHE FILEPATH "The static library of irrlicht.")
-SET (IRRLICHT_BIN_DIR "${CMAKE_SOURCE_DIR}/dependency/IRRLICHT/libIrrlicht.so.1.8.5" CACHE FILEPATH "The shared library of irrlicht.")
+SET (IRRLICHT_BIN_DIR "${CMAKE_CURRENT_SOURCE_DIR}/dependency/IRRLICHT/libIrrlicht.so.1.8.5" CACHE FILEPATH "The shared library of irrlicht.")
 
 INCLUDE_DIRECTORIES(
   ${IRRLICHT_INCLUDE_DIR}
