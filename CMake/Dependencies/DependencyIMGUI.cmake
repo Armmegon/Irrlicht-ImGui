@@ -49,6 +49,10 @@ SET (IMGUI_BACKEND_FILES
 	${IMGUI_SOURCE_DIR}/backends/imgui_impl_opengl2.cpp
 )
 
+SET (IMGUI_MISC_FILES
+	${IMGUI_SOURCE_DIR}/misc/cpp/imgui_stdlib.cpp
+)
+
 SET (IMGUI_SOURCE_FILES
 	${IMGUI_SOURCE_DIR}/imgui.cpp
 	${IMGUI_SOURCE_DIR}/imgui_draw.cpp	
@@ -56,6 +60,7 @@ SET (IMGUI_SOURCE_FILES
 	${IMGUI_SOURCE_DIR}/imgui_widgets.cpp
 	${IMGUI_SOURCE_DIR}/imgui_tables.cpp
 	${IMGUI_BACKEND_FILES}
+	${IMGUI_MISC_FILES}
 )
 
 SET (IMGUI_FONTFILES
