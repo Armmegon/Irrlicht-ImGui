@@ -22,7 +22,7 @@
 # SOFTWARE.
 #
 
-SET (IRRIMGUI_STATIC_LIBRARY ON CACHE BOOL "Enabled static lib build (requires also static lib of Irrlicht!).")
+SET (IRRIMGUI_STATIC_LIBRARY OFF CACHE BOOL "Enabled static lib build (requires also static lib of Irrlicht!).")
 
 if (IRRIMGUI_STATIC_LIBRARY)
 	message(STATUS "Build static library...")
