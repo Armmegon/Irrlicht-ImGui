@@ -37,7 +37,7 @@
 #endif
 
 #ifndef _IRRIMGUI_SUBDIR_IRRLICHT_INCLUDE_
-#include <irrlicht.h>
+#include <IRRLICHT/include/irrlicht.h>
 #else  // _IRRIMGUI_SUBDIR_IRRLICHT_INCLUDE_
 #include <Irrlicht/irrlicht.h>
 #endif // _IRRIMGUI_SUBDIR_IRRLICHT_INCLUDE_
